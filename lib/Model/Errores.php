@@ -1,9 +1,9 @@
 <?php
 
-namespace PldV2Simulacion\Client\Model;
+namespace pld\simulacion\mx\Client\Model;
 
 use \ArrayAccess;
-use \PldV2Simulacion\Client\ObjectSerializer;
+use \pld\simulacion\mx\Client\ObjectSerializer;
 
 class Errores implements ModelInterface, ArrayAccess
 {
@@ -13,7 +13,7 @@ class Errores implements ModelInterface, ArrayAccess
     
     protected static $apihubTypes = [
         'folio_consulta' => 'string',
-        'errores' => '\PldV2Simulacion\Client\Model\Error[]'
+        'errores' => '\pld\simulacion\mx\Client\Model\Error[]'
     ];
     
     protected static $apihubFormats = [

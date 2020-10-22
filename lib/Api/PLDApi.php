@@ -1,6 +1,6 @@
 <?php
 
-namespace PldV2Simulacion\Client\Api;
+namespace pld\simulacion\mx\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -8,10 +8,10 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use PldV2Simulacion\Client\ApiException;
-use PldV2Simulacion\Client\Configuration;
-use PldV2Simulacion\Client\HeaderSelector;
-use PldV2Simulacion\Client\ObjectSerializer;
+use pld\simulacion\mx\Client\ApiException;
+use pld\simulacion\mx\Client\Configuration;
+use pld\simulacion\mx\Client\HeaderSelector;
+use pld\simulacion\mx\Client\ObjectSerializer;
 
 class PLDApi
 {
@@ -45,7 +45,7 @@ class PLDApi
     
     public function getPLDWithHttpInfo($x_api_key, $body)
     {
-        $returnType = '\PldV2Simulacion\Client\Model\Respuesta';
+        $returnType = '\pld\simulacion\mx\Client\Model\Respuesta';
         $request = $this->getPLDRequest($x_api_key, $body);
         try {
             $options = $this->createHttpClientOption();
@@ -91,7 +91,7 @@ class PLDApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PldV2Simulacion\Client\Model\Respuesta',
+                        '\pld\simulacion\mx\Client\Model\Respuesta',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -99,7 +99,7 @@ class PLDApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PldV2Simulacion\Client\Model\Errores',
+                        '\pld\simulacion\mx\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -107,7 +107,7 @@ class PLDApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PldV2Simulacion\Client\Model\Errores',
+                        '\pld\simulacion\mx\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -115,7 +115,7 @@ class PLDApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PldV2Simulacion\Client\Model\Errores',
+                        '\pld\simulacion\mx\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -123,7 +123,7 @@ class PLDApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PldV2Simulacion\Client\Model\Errores',
+                        '\pld\simulacion\mx\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -131,7 +131,7 @@ class PLDApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PldV2Simulacion\Client\Model\Errores',
+                        '\pld\simulacion\mx\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -139,7 +139,7 @@ class PLDApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PldV2Simulacion\Client\Model\Errores',
+                        '\pld\simulacion\mx\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -147,7 +147,7 @@ class PLDApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PldV2Simulacion\Client\Model\Errores',
+                        '\pld\simulacion\mx\Client\Model\Errores',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -169,7 +169,7 @@ class PLDApi
     
     public function getPLDAsyncWithHttpInfo($x_api_key, $body)
     {
-        $returnType = '\PldV2Simulacion\Client\Model\Respuesta';
+        $returnType = '\pld\simulacion\mx\Client\Model\Respuesta';
         $request = $this->getPLDRequest($x_api_key, $body);
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

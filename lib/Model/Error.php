@@ -1,9 +1,9 @@
 <?php
 
-namespace PldV2Simulacion\Client\Model;
+namespace pld\simulacion\mx\Client\Model;
 
 use \ArrayAccess;
-use \PldV2Simulacion\Client\ObjectSerializer;
+use \pld\simulacion\mx\Client\ObjectSerializer;
 
 class Error implements ModelInterface, ArrayAccess
 {

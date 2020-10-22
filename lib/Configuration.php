@@ -1,6 +1,6 @@
 <?php
 
-namespace PldV2Simulacion\Client;
+namespace pld\simulacion\mx\Client;
 
 class Configuration
 {
@@ -18,7 +18,7 @@ class Configuration
     
     protected $host = '';
     
-    protected $userAgent = 'PldV2Simulacion-Codegen/1.0.0/php';
+    protected $userAgent = 'pld\simulacion\mx-Codegen/1.0.0/php';
     
     protected $debug = false;
     
@@ -159,7 +159,7 @@ class Configuration
     
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (PldV2Simulacion\Client) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (pld\simulacion\mx\Client) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 2.0.0' . PHP_EOL;

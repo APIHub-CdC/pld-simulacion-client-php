@@ -1,9 +1,9 @@
 <?php
 
-namespace PldV2Simulacion\Client\Model;
+namespace pld\simulacion\mx\Client\Model;
 
 use \ArrayAccess;
-use \PldV2Simulacion\Client\ObjectSerializer;
+use \pld\simulacion\mx\Client\ObjectSerializer;
 
 class Respuesta implements ModelInterface, ArrayAccess
 {
@@ -13,7 +13,7 @@ class Respuesta implements ModelInterface, ArrayAccess
     
     protected static $apihubTypes = [
         'folio_consulta' => 'string',
-        'personas' => '\PldV2Simulacion\Client\Model\Persona[]'
+        'personas' => '\pld\simulacion\mx\Client\Model\Persona[]'
     ];
     
     protected static $apihubFormats = [

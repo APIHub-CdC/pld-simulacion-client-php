@@ -1,6 +1,6 @@
 <?php
 
-namespace PldV2Simulacion\Client\Model;
+namespace pld\simulacion\mx\Client\Model;
 
 interface ModelInterface
 {

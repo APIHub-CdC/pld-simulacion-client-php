@@ -1,6 +1,6 @@
 <?php
 
-namespace PldV2Simulacion\Client;
+namespace pld\simulacion\mx\Client;
 
 use \Exception;
 

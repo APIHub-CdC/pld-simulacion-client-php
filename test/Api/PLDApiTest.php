@@ -1,11 +1,11 @@
 <?php
 
-namespace PldV2Simulacion\Client;
+namespace pld\simulacion\mx\Client;
 
-use \PldV2Simulacion\Client\Configuration;
-use \PldV2Simulacion\Client\ApiException;
-use \PldV2Simulacion\Client\Api\PLDApi;
-use \PldV2Simulacion\Client\Model\Peticion;
+use \pld\simulacion\mx\Client\Configuration;
+use \pld\simulacion\mx\Client\ApiException;
+use \pld\simulacion\mx\Client\Api\PLDApi;
+use \pld\simulacion\mx\Client\Model\Peticion;
 
 class PLDApiTest extends \PHPUnit_Framework_TestCase
 {

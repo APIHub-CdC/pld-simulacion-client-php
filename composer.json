@@ -1,5 +1,5 @@
 {
-    "name": "apihub-cdc/pld-simulacion",
+    "name": "apihub-cdc/pld-simulacion-client",
     "description": "",
     "keywords": [
         "apihub",
@@ -22,9 +22,9 @@
         "friendsofphp/php-cs-fixer": "~2.12"
     },
     "autoload": {
-        "psr-4": { "PldV2Simulacion\\Client\\" : "lib/" }
+        "psr-4": { "pld\\simulacion\\mx\\Client\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "PldV2Simulacion\\Client\\" : "test/" }
+        "psr-4": { "pld\\simulacion\\mx\\Client\\" : "test/" }
     }
 }
